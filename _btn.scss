@@ -1,0 +1,9 @@
+@mixin btn ($background, $color) {
+    background-color: $background;
+    color: $color;
+
+    &:hover{
+        background-color: lighten(#DAD3BE, 10%) !important;
+        color: black !important;
+    }
+}

@@ -1,0 +1,239 @@
+@use "warna";
+
+@import "btn";
+@import "gambarProduk";
+
+
+
+$font-stack: Helvetica, sans-serif;
+$font2: "Times New Roman", Times, serif;
+$font3: 'Open Sans', sans-serif;
+$font4: "Lato", sans-serif;
+
+$scaleX: 7;
+$scaleY: 2.5;
+$fontSizeNormal: 12px;
+$fontSizeHeader: 16px;
+
+$default-font: 'Lucida';
+
+$warna: #DAD3BE, #543310, #F8F4E1, black;
+
+$ukuran_font: 12px, 16px,32px, 30px;
+
+$types: ( "small": 12px, "medium": 16px, "Large": 32px, "xl": 60px);
+
+$warna4: warna.$color;
+
+$width: 18rem; 
+
+$warna2: black green;
+
+
+
+
+#background2 {
+    background-size: cover;
+    height: 500px;
+}
+
+#background3 {
+    background-color:  nth($warna,1);
+    min-height: 45vh;
+}
+
+.background5 {
+    background-color: nth($warna,3) ;
+}
+
+#centang {
+    background-color: nth($warna,2);
+}
+
+#carousel1 {
+    background-size: cover;
+    height: 650px;
+}
+
+.text1{
+    color: $warna4;
+}
+
+
+// Gambar
+
+.logo {
+    @include gambar ("asset/logo1.png",45px, 45px, $is_failed: true);
+}
+.logo_footer {
+    @include gambar ("asset/logo1.png",90px, 90px, $is_failed: true);
+    
+}
+.carousel1{
+    @include gambar ("asset/produk/produk13.jpg",0,90vh, $is_failed: false);
+}
+.carousel2{
+    @include gambar ("asset/produk/produk5.jpg",0,90vh, $is_failed: false);
+}
+.carousel3{
+    @include gambar ("asset/produk/produk2.jpg",0,90vh, $is_failed: false);
+}
+.produk {
+    @include gambar ("asset/produk/produk4.jpg",350px, 400px, $is_failed: true);
+}
+.produk1 {
+    @include gambar ("asset/produk/produk1.jpg",0,18rem, $is_failed: false);
+}
+.produk2 {
+    @include gambar ("asset/produk/produk2.jpg",0,18rem, $is_failed: false);
+}
+.produk3 {
+    @include gambar ("asset/produk/produk3.jpg",0,18rem, $is_failed: false);
+}
+.produk4 {
+    @include gambar ("asset/produk/produk7.jpg",0,18rem, $is_failed: false);
+}
+.produk5 {
+    @include gambar ("asset/produk/produk10.jpg",0,18rem, $is_failed: false);
+}
+
+.gambar {
+    @include gambar ("asset/produk/produk6.jpg",0, 500px, $is_failed: false);
+}
+
+.faq {
+    @include gambar ("asset/produk/produk14.jpg",350px, 450px, $is_failed: true);
+}
+
+.uk_card {
+    width: $width;
+}
+
+
+// .uk_testimoni {
+//     width: 100%;
+// }
+
+// .uk_quote {
+//     width: 100%;
+// }
+
+.accordion {
+    background-color: nth($warna,2) !important;
+    color: white !important;
+}
+
+.font{
+    font-family: $font-stack !important;
+    font-size: nth($ukuran_font, 4 );
+    
+}
+
+.font2{
+    font-family: $font2;
+}
+
+.font3{
+    font-family: $font3;
+}
+
+.font4{
+    font-family: $font-stack !important;
+    @extend .font_xl;
+    @extend .warna;
+}
+
+.warna{
+    color: nth($warna,1);
+}
+ 
+.warna2{
+    color: nth($warna,2)  !important;
+}
+
+.warna3{
+    color: nth($warna,4)  !important;
+}
+
+.nav-link{
+    color: nth($warna,2)  !important;
+}
+
+
+.align{
+    text-align: center;
+}
+
+// button
+
+
+.btn{
+    @include btn (nth($warna,2), $warna4);
+}
+
+// @each $color in $warna2{
+//     .warna_#{$color} {
+//         background-color: $color;
+//     }
+// }
+
+@each $name, $size in $types{
+    .font_#{$name} {
+        font-size: $size;
+    }
+}
+
+// parallax
+
+.parallax {
+    /* The image used */
+    background-image: url('asset/parallax.png');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1 {
+    /* The image used */
+    background-image: url('asset/parallax4.png');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.anchor{
+    position: relative;
+    top: -72px;
+    left: 0px;
+}
+
+.regular-font {
+    font-family: $font4;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+#map{
+    text-decoration: none;
+}
+
+// Hover
+
+.card_produk{
+    transition: transform .5s;
+}
+.card_produk:hover{
+    transform: scale(1.1);
+}

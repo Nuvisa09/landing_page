@@ -1,0 +1,229 @@
+#background2 {
+  background-size: cover;
+  height: 500px;
+}
+
+#background3 {
+  background-color: #DAD3BE;
+  min-height: 45vh;
+}
+
+.background5 {
+  background-color: #F8F4E1;
+}
+
+#centang {
+  background-color: #543310;
+}
+
+#carousel1 {
+  background-size: cover;
+  height: 650px;
+}
+
+.text1 {
+  color: white;
+}
+
+.logo {
+  background-size: cover;
+  background-image: url("asset/logo1.png");
+  height: 45px;
+  width: 45px;
+}
+
+.logo_footer {
+  background-size: cover;
+  background-image: url("asset/logo1.png");
+  height: 90px;
+  width: 90px;
+}
+
+.carousel1 {
+  background-size: cover;
+  background-image: url("asset/produk/produk13.jpg");
+  height: 90vh;
+}
+
+.carousel2 {
+  background-size: cover;
+  background-image: url("asset/produk/produk5.jpg");
+  height: 90vh;
+}
+
+.carousel3 {
+  background-size: cover;
+  background-image: url("asset/produk/produk2.jpg");
+  height: 90vh;
+}
+
+.produk {
+  background-size: cover;
+  background-image: url("asset/produk/produk4.jpg");
+  height: 400px;
+  width: 350px;
+}
+
+.produk1 {
+  background-size: cover;
+  background-image: url("asset/produk/produk1.jpg");
+  height: 18rem;
+}
+
+.produk2 {
+  background-size: cover;
+  background-image: url("asset/produk/produk2.jpg");
+  height: 18rem;
+}
+
+.produk3 {
+  background-size: cover;
+  background-image: url("asset/produk/produk3.jpg");
+  height: 18rem;
+}
+
+.produk4 {
+  background-size: cover;
+  background-image: url("asset/produk/produk7.jpg");
+  height: 18rem;
+}
+
+.produk5 {
+  background-size: cover;
+  background-image: url("asset/produk/produk10.jpg");
+  height: 18rem;
+}
+
+.gambar {
+  background-size: cover;
+  background-image: url("asset/produk/produk6.jpg");
+  height: 500px;
+}
+
+.faq {
+  background-size: cover;
+  background-image: url("asset/produk/produk14.jpg");
+  height: 450px;
+  width: 350px;
+}
+
+.uk_card {
+  width: 18rem;
+}
+
+.accordion {
+  background-color: #543310 !important;
+  color: white !important;
+}
+
+.font {
+  font-family: Helvetica, sans-serif !important;
+  font-size: 30px;
+}
+
+.font2 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.font3 {
+  font-family: "Open Sans", sans-serif;
+}
+
+.font4 {
+  font-family: Helvetica, sans-serif !important;
+}
+
+.warna, .font4 {
+  color: #DAD3BE;
+}
+
+.warna2 {
+  color: #543310 !important;
+}
+
+.warna3 {
+  color: black !important;
+}
+
+.nav-link {
+  color: #543310 !important;
+}
+
+.align {
+  text-align: center;
+}
+
+.btn {
+  background-color: #543310;
+  color: white;
+}
+.btn:hover {
+  background-color: #ede9df !important;
+  color: black !important;
+}
+
+.font_small {
+  font-size: 12px;
+}
+
+.font_medium {
+  font-size: 16px;
+}
+
+.font_Large {
+  font-size: 32px;
+}
+
+.font_xl, .font4 {
+  font-size: 60px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("asset/parallax.png");
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax1 {
+  /* The image used */
+  background-image: url("asset/parallax4.png");
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.anchor {
+  position: relative;
+  top: -72px;
+  left: 0px;
+}
+
+.regular-font {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#map {
+  text-decoration: none;
+}
+
+.card_produk {
+  transition: transform 0.5s;
+}
+
+.card_produk:hover {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=style.css.map */

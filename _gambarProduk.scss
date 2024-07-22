@@ -1,0 +1,9 @@
+@mixin gambar ($image,$x, $y, $is_failed: false ){
+    background-size:  cover;
+    background-image: url($image);
+    height: $y;
+
+    @if $is_failed{
+        width: $x;
+    } 
+}
